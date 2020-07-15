@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 class="font-style">Search Github Jobs API</h1>
+    <h5 class="font-style">
+      Input a job description and/or location, click a type option, then
+      "Search"
+    </h5>
+    <div id="form-container">
+
+      <div style="margin: 10px">
+        <form>
+          <input
+            type="search"
+            name=""
+            id="description-text"
+            placeholder="job description"
+          />
+          <input
+            type="search"
+            name=""
+            id="location-text"
+            placeholder="location"
+          />
+      </div>
+
+        <div style="margin: 10px">
+          <input type="radio" id="job-type-full" name="jobs" />
+          <label> Full-time </label><br />
+          <input type="radio" id="job-type-part" name="jobs" />
+          <label> Part-time </label><br />
+          <input type="radio" id="job-type-remote" name="jobs" />
+          <label> Remote </label>
+        </div>
+
+        <button type="button" onclick="fetchData()">Search</button>
+      </form>
+    </div>
+
+    <div id="card-container"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
